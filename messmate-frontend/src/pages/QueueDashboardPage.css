@@ -1,0 +1,149 @@
+.queue {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.queue-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.queue-head button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  color: #b45309;
+  border-radius: 999px;
+  padding: 0.4rem 1.2rem;
+  cursor: pointer;
+}
+
+.ticket-verify {
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #fff;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+}
+
+.ticket-verify form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.ticket-verify input {
+  flex: 1;
+  min-width: 240px;
+  border-radius: 999px;
+  padding: 0.6rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fff9f0;
+  color: #1f2937;
+}
+
+.ticket-verify button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.4rem;
+  background: linear-gradient(135deg, #ffb347, #ffcc33);
+  color: #7c2d12;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ticket-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 0.9rem;
+  background: #fff8e1;
+}
+
+.queue-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.queue-card {
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: #fff;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.06);
+}
+
+.queue-card header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-pill {
+  padding: 0.2rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+}
+
+.status-queued {
+  background: rgba(59, 130, 246, 0.15);
+  color: #1d4ed8;
+}
+
+.status-preparing {
+  background: rgba(251, 191, 36, 0.2);
+  color: #f59e0b;
+}
+
+.status-ready {
+  background: rgba(80, 216, 144, 0.2);
+  color: #15803d;
+}
+
+.status-collected,
+.status-cancelled {
+  background: rgba(248, 113, 113, 0.2);
+  color: #f87171;
+}
+
+.queue-card ul {
+  list-style: disc;
+  margin: 0.4rem 0 0 1.5rem;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.queue-card .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.queue-card .actions button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  cursor: pointer;
+}
+
+.queue-card .actions button:first-child {
+  background: #16a34a;
+  color: #ffffff;
+}
+
+.queue-card .actions button:last-child {
+  background: rgba(248, 113, 113, 0.2);
+  color: #fca5a5;
+}
+
